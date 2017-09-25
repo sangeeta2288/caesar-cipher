@@ -33,5 +33,10 @@ for char in message:
                                 char_code-= 26
                         elif(char_code < ord("a")):
                                 char_code += 26
-                secreat_msg += chr(char_code)                
+                secreat_msg += chr(char_code)
+        else:
+                secreat_msg += char
+        #print(secreat_msg)
+
+print("Encrypted message is: ",secreat_msg)                
 
