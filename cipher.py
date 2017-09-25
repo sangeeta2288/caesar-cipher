@@ -17,3 +17,11 @@ message = input(print("Enter your message"))
 key = int(input(print("Enter Key(No. to shift each charecter:1-26)")))
 print(message)
 print(key)
+secreat_msg= ""
+for char in message:
+        if(char.isalpha()):
+                char_code = ord(char)
+                char_code += key
+                #print(char_code)
+                
+
