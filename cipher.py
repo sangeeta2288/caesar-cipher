@@ -22,6 +22,16 @@ for char in message:
         if(char.isalpha()):
                 char_code = ord(char)
                 char_code += key
-                #print(char_code)
                 
+                if(char.isupper()):
+                        if(char_code > ord("Z")):
+                                char_code-= 26
+                        elif(char_code < ord("A")):
+                                char_code += 26
+                else:
+                        if(char_code > ord("z")):
+                                char_code-= 26
+                        elif(char_code < ord("a")):
+                                char_code += 26
+                secreat_msg += chr(char_code)                
 
